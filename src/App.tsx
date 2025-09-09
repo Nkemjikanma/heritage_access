@@ -161,12 +161,13 @@ function App() {
         >
           <div className="max-w-4xl mx-auto px-3 py-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
-              <div className="flex items-center gap-4 mb-4 md:mb-0">
+              <div className="flex items-center mb-4 md:mb-0">
                 <img
-                  src="/side.png"
+                  src="/transparent.png"
                   alt="Heritage Access Logo"
-                  className="w-48 h-24 mx-auto drop-shadow-2xl"
+                  className="w-8 h-8 mx-auto drop-shadow-2xl"
                 />
+                <span className="font-bold text-[#00687a] text-xl">Heritage Access</span>
               </div>
 
               <div className="flex items-center gap-6 text-slate-400 text-sm">
