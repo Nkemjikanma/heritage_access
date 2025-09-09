@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import { Mail, Phone, Clock, MapPin, Globe, ArrowRight, Sparkles } from "lucide-react"
+import { motion, type Variants } from "framer-motion";
+import { Mail, Phone, MapPin, ArrowRight, } from "lucide-react"
 
 function App() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -13,7 +13,7 @@ function App() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,
