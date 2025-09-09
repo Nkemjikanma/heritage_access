@@ -154,7 +154,7 @@ function App() {
 
         {/* Enhanced footer */}
         <motion.footer
-          className="absolute bottom-0 left-0 w-full z-10 backdrop-blur-xl border-t border-white/10"
+          className="relative w-full z-10 backdrop-blur-xl border-t border-white/10"
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
