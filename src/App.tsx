@@ -154,7 +154,7 @@ function App() {
 
         {/* Enhanced footer */}
         <motion.footer
-          className="absolute bottom-0 left-0 w-full z-10 bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 backdrop-blur-xl border-t border-white/10"
+          className="absolute bottom-0 left-0 w-full z-10 backdrop-blur-xl border-t border-white/10"
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
@@ -162,18 +162,15 @@ function App() {
           <div className="max-w-4xl mx-auto px-4 py-8">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="flex items-center gap-4 mb-4 md:mb-0">
-                <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">H</span>
-                </div>
-                <span className="text-white font-medium">Heritage Access</span>
+                <img
+                  src="/side.png"
+                  alt="Heritage Access Logo"
+                  className="w-32 h-16 mx-auto drop-shadow-2xl"
+                />
               </div>
 
               <div className="flex items-center gap-6 text-slate-400 text-sm">
                 <span>© {new Date().getFullYear()} All rights reserved</span>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>Global</span>
-                </div>
               </div>
             </div>
           </div>
