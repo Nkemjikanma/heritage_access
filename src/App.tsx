@@ -165,7 +165,7 @@ function App() {
                 <img
                   src="/side.png"
                   alt="Heritage Access Logo"
-                  className="w-32 h-16 mx-auto drop-shadow-2xl"
+                  className="w-48 h-24 mx-auto drop-shadow-2xl"
                 />
               </div>
 
