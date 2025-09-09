@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import { Mail, Phone, MapPin, ArrowRight, } from "lucide-react"
+import { Mail, Phone, ArrowRight, } from "lucide-react"
 
 function App() {
   const containerVariants: Variants = {
