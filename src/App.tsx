@@ -159,7 +159,7 @@ function App() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <div className="max-w-4xl mx-auto px-4 py-8">
+          <div className="max-w-4xl mx-auto px-3 py-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="flex items-center gap-4 mb-4 md:mb-0">
                 <img
