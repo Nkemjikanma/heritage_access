@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import { Mail, Phone, ArrowRight, } from "lucide-react"
+import { Mail, Phone, ArrowRight, Sparkles } from "lucide-react"
 
 function App() {
   const containerVariants: Variants = {
@@ -27,49 +27,44 @@ function App() {
   };
 
   return (
-    <div className="relative min-h-screen w-full bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-700" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-purple-400/10 to-pink-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
-      </div>
+    <div className="relative min-h-screen w-full min-w-sm bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 overflow-hidden px-4 borer">
 
 
       {/* Main content */}
       <motion.div
-        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8"
+        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* Logo with enhanced styling */}
         <motion.div
-          className="relative mb-8"
+          className="relative mb-2 min-w-sm"
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300, damping: 10 }}
         >
-          <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
-            <img
-              src="/body.png"
-              alt="Heritage Access Logo"
-              className="w-32 h-32 md:w-48 md:h-48 mx-auto drop-shadow-2xl"
-            />
-          </div>
+
+          {/* <div className="relative h-fit w-fit bg-white/60 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl z-10"> */}
+          <img
+            src="/side.png"
+            alt="Heritage Access Logo"
+            className="w-[400px] h-[200] md:w-[800px] md:h-[400px] mx-auto drop-shadow-2xl relative z-10"
+          />
+          {/* </div> */}
         </motion.div>
 
         {/* Enhanced title with gradient text */}
         <motion.div variants={itemVariants} className="text-center mb-6">
-          {/* <motion.div */}
-          {/*   className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full border border-cyan-300/20 mb-4" */}
-          {/*   initial={{ scale: 0 }} */}
-          {/*   animate={{ scale: 1 }} */}
-          {/*   transition={{ delay: 0.5, type: "spring" }} */}
-          {/* > */}
-          {/*   <Sparkles className="w-4 h-4 text-cyan-500" /> */}
-          {/*   <span className="text-sm font-medium text-slate-600">Something amazing is coming</span> */}
-          {/* </motion.div> */}
+          <motion.div
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/10 to-blue-500/10 rounded-full border border-orange-300/20 mb-4"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.5, type: "spring" }}
+          >
+            <Sparkles className="w-4 h-4 text-cyan-500" />
+            <span className="text-sm font-medium text-slate-600">This website is under construction</span>
+          </motion.div>
 
           {/*<h1 className="text-4xl md:text-7xl font-bold text-[#00687a] bg-clip-text mb-4 leading-tight">
             Heritage Access
@@ -77,10 +72,11 @@ function App() {
           */}
 
           <motion.p
-            className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
+            // className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
+            className="text-3xl md:text-6xl text-[#00687a] bg-clip-text mb-4 leading-tight"
             variants={itemVariants}
           >
-            A really cool sentence about what we'll be doing in Heritage Access.
+            Keeping heritage alive
           </motion.p>
         </motion.div>
 
@@ -162,12 +158,7 @@ function App() {
           <div className="max-w-4xl mx-auto px-3 py-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="flex items-center mb-4 md:mb-0">
-                <img
-                  src="/transparent.png"
-                  alt="Heritage Access Logo"
-                  className="w-8 h-8 mx-auto drop-shadow-2xl"
-                />
-                <span className="font-bold text-[#00687a] text-xl">Heritage Access</span>
+                <span className="font-bold text-[#00687a]">Heritage Access Ltd.</span>
               </div>
 
               <div className="flex items-center gap-6 text-slate-400 text-sm">
