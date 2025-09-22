@@ -49,21 +49,30 @@ function App() {
           <img
             src="/side.png"
             alt="Heritage Access Logo"
-            className="w-[400px] h-[200] md:w-[800px] md:h-[400px] mx-auto drop-shadow-2xl relative z-10"
+            className="w-[400px] h-[150] md:w-[800px] md:h-[380px] mx-auto drop-shadow-2xl relative z-10"
           />
           {/* </div> */}
         </motion.div>
 
         {/* Enhanced title with gradient text */}
         <motion.div variants={itemVariants} className="text-center mb-6">
+
+          <motion.p
+            // className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
+            className="text-3xl md:text-5xl text-[#00687a] bg-clip-text mb-4 leading-tight italic"
+            variants={itemVariants}
+          >
+            ...keeping heritage alive!
+          </motion.p>
+
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/10 to-blue-500/10 rounded-full border border-orange-300/20 mb-4"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/10 to-blue-500/10 rounded-full border border-orange-300/20 my-7"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.5, type: "spring" }}
           >
             <Sparkles className="w-4 h-4 text-cyan-500" />
-            <span className="text-sm font-medium text-slate-600">This website is under construction</span>
+            <span className="text-md md:text-xl font-medium text-slate-600">This website is under construction</span>
           </motion.div>
 
           {/*<h1 className="text-4xl md:text-7xl font-bold text-[#00687a] bg-clip-text mb-4 leading-tight">
@@ -71,13 +80,6 @@ function App() {
           </h1>
           */}
 
-          <motion.p
-            // className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
-            className="text-3xl md:text-6xl text-[#00687a] bg-clip-text mb-4 leading-tight"
-            variants={itemVariants}
-          >
-            Keeping heritage alive
-          </motion.p>
         </motion.div>
 
         {/* Enhanced contact cards */}
@@ -92,12 +94,12 @@ function App() {
             whileTap={{ scale: 0.98 }}
           >
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl shadow-lg group-hover:shadow-cyan-500/25 transition-shadow">
+              <div className="p-3 bg-gradient-to-br from-cyan-400 to-[#00687a] rounded-xl shadow-lg group-hover:shadow-cyan-500/25 transition-shadow">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-slate-800 mb-1">Email Us</h3>
-                <p className="text-cyan-600 group-hover:text-blue-600 transition-colors">info@heritageaccess.org</p>
+                <p className="text-cyan-600 group-hover:text-cyan-500 transition-colors">info@heritageaccess.org</p>
               </div>
               <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-cyan-500 group-hover:translate-x-1 transition-all" />
             </div>
@@ -110,14 +112,14 @@ function App() {
             whileTap={{ scale: 0.98 }}
           >
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl shadow-lg group-hover:shadow-orange-500/25 transition-shadow">
+              <div className="p-3 bg-gradient-to-br from-cyan-400 to-[#00687a] rounded-xl shadow-lg group-hover:shadow-orange-500/25 transition-shadow">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-slate-800 mb-1">Call Us</h3>
-                <p className="text-orange-600 group-hover:text-red-600 transition-colors">+1 (234) 567-890</p>
+                <p className="text-cyan-600 group-hover:text-cyan-500 transition-colors">+44 7863 450140</p>
               </div>
-              <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-cyan-500 group-hover:translate-x-1 transition-all" />
             </div>
           </motion.a>
         </motion.div>
@@ -156,10 +158,12 @@ function App() {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <div className="max-w-4xl mx-auto px-3 py-4">
-            <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center justify-center">
+              {/* 
               <div className="flex items-center mb-4 md:mb-0">
                 <span className="font-bold text-[#00687a]">Heritage Access Ltd.</span>
-              </div>
+               </div>
+               */}
 
               <div className="flex items-center gap-6 text-slate-400 text-sm">
                 <span>© {new Date().getFullYear()} All rights reserved</span>
